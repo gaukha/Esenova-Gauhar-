@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1> Esenova Gaukhar </h1>
+  <h3> CS-2122 </h3>
+    <h2 id="datetime"></h2>
+    <script type="text/javascript">
+    var today=new Date();
+    var day=today.getDay();
+    var year=today.getFullYear();
+    var datt=today.getDate();
+    var month=today.getMonth()+1;
+    var daylist=["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+    var date=today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time=today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime=date+' '+time;
+    document.getElementById("datetime").innerHTML = dateTime + ' <br> Today is : ' + daylist[day] + ' <br> Year is: ' + [year] + ' <br> Date is: ' + [datt] + ' <br> Month is: ' + [month] ;
+    </script>
+<form>
+1st Number: <input type="text" id="firstNum" /><br>
+2nd Number: <input type="text" id="secondNum" /><br>
+<input type="button" onClick="multiply()" Value="Multiply" />
+<input type="button" onClick="divide()" Value="Divide" />
+</form>
+<p>The Result Is :
+<span id="res"></span>
+</p>
+<script type="text/javascript">
+  alert("Esenova Gaukhar, cs-2122");
+  </script>
+       <script>
+         var firstdate, seconddate;
+         firstdate=new Date("2024-6-15");
+         today=new Date();
+         var timesdifference=firstdate.getTime()-today.getTime();
+         var daysdifference=timesdifference/(1000*60*60*24);
+         document.write("Days left until university graduation:"+daysdifference+" days");
+      </script>
+</html>
